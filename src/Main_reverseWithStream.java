@@ -11,7 +11,7 @@ public class Main_reverseWithStream {
 
         String str = "quick brown fox jumps over lazy dog";
 
-        String finalStr = Arrays.stream(str.split(" ")).map(s -> new StringBuilder(s).reverse()).collect(Collectors.joining());
+        String finalStr = Arrays.stream(str.split(" ")).map(s -> new StringBuilder(s).reverse()).collect(Collectors.joining(" "));
 
         // reverse a String using Java 8
         String reverseStr = Arrays
